@@ -5,7 +5,7 @@ import SlideUp from "@/components/Animations/slideUp";
 export default function About() {
     return (
         <>
-            <title>About - Jeongwon Kim</title>
+            <title>About - Hyeran Kim</title>
             <SlideUp delay={100}>
                 <IntroSection />
             </SlideUp>
