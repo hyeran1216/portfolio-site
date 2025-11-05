@@ -7,11 +7,11 @@ export type PublicationType = {
 }
 
 export const PUBLICATIONS: PublicationType[] = [
-    {
-        title: 'Development of a Personalized Content Filtering System for Upward-Comparison-Inducing Content',
-        authors: ['Jeongwon Kim', 'Eunnho Kim', 'Sangkeun Park'],
-        conference: 'KCC 2025 (Accepted)',
-        thumbnail: '/publications/kcc2025-3.jpg',
-        link: '/publications/최종본.pdf'
-    },
+    // {
+    //     title: 'Paper Title',
+    //     authors: ['User1', 'User2', 'User3'],
+    //     conference: 'Conference Name (Accepted)',
+    //     thumbnail: '/publications/paper-thumbnail.jpg',
+    //     link: '/publications/paper.pdf'
+    // },
 ]

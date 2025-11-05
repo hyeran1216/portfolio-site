@@ -4,7 +4,7 @@ import PublicationList from "@/features/Publications/comonents/publicationList";
 export default function Publications() {
     return (
         <>
-            <title>Publications - Jeongwon Kim</title>
+            <title>Publications - Hyeran Kim</title>
             <SlideUp delay={100}>
                 <PublicationList />
             </SlideUp>

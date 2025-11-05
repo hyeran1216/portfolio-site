@@ -8,7 +8,7 @@
 // export default function Head({ title = '', description = ''}: HeadProps) {
 //     return (
 //         <Helmet>
-//             <title>{title ? `${title} | Jeongwon Kim` : 'Jeongwon Kim'}</title>
+//             <title>{title ? `${title} | Hyeran Kim` : 'Hyeran Kim'}</title>
 //             <meta name="description" content={description} />
 //         </Helmet>
 //     )

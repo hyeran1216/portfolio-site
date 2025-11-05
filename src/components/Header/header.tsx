@@ -9,8 +9,8 @@ export default function Header() {
             <nav className="max-w-4xl mx-auto px-4 py-8">
                 <div className="flex items-center justify-between">
                     <Link to="/" className="text-2xl font-bold">
-                        <span className="hidden sm:inline">JEONGWON KIM</span>
-                        <span className="sm:hidden">JW</span>
+                        <span className="hidden sm:inline">Hyeran Kim</span>
+                        <span className="sm:hidden">HR</span>
                     </Link>
                     <div className="flex items-center gap-8">
                         {headerItemList.map((item) => (

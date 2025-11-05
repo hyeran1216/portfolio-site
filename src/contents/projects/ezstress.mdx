@@ -1,81 +1,90 @@
 ---
 title: "EzStress"
-date: "Mar 2025 - June 2025"
+date: "Mar 2025 - Jun 2025"
 role: "Frontend Developer"
-thumbnail: "/projects/ezstress-thumbnail.jpg"
+thumbnail: "/projects/ezstress/ezstress-thumbnail.jpg"
 ---
 
 import ToolTag from '@/components/ToolTags/toolTag';
 import ArrowLink from '@/components/ArrowLink/arrowLink';
 
-I designed and developed a web service that predicts load bottlenecks using AI, performs stress testing, and visualizes the results.
+AI를 활용해 부하 병목을 예측하고, 스트레스 테스트를 자동으로 수행하며, 결과를 시각화하는 웹 서비스를 설계·개발했습니다.
 
-You can see the full source code of the project at <ArrowLink href="https://github.com/cloud-computing-team-b" className="font-normal">GitHub</ArrowLink>.
-
+25-1 경희대학교 [클라우드컴퓨팅] 수업의 프로젝트 결과물입니다. 프로젝트의 전체 소스 코드는 <ArrowLink href="https://github.com/cloud-computing-team-b" className="font-normal">GitHub</ArrowLink>에서 확인할 수 있습니다.
+<br/>
 ## Background
 
-Stress testing is essential for ensuring the stability of web services. But many development teams-especially smaller ones-struggle to perform sufficient testing due to its complexity and cost.
-This project aims to lower the barrier by providing an automated, fast and easy to use web testing environment(that is also cost-effective!).
+스트레스 테스트는 웹 서비스의 안정성을 보장하기 위해 필수적이지만 소규모 팀의 경우 테스트의 복잡성과 비용 때문에 충분한 테스트를 수행하기 어렵습니다.
+이 프로젝트는 자동화되고, 빠르며, 사용이 쉽고, 비용 효율적인 테스트 환경을 제공하여 이러한 스트레스 테스트의 장벽을 낮추는 것을 목표로 진행했습니다.
 
 <div className="flex flex-row mx-auto mt-8 justify-center flex-wrap gap-4">
 <img 
-  src="/projects/ezstress-meme-1.jpg" 
+  src="/projects/ezstress/ezstress-meme-1.jpg" 
   alt="meme 1"
   className="rounded-lg max-w-full w-64 md:w-80 flex-shrink" 
 />
 <img 
-  src="/projects/ezstress-meme-2.png" 
+  src="/projects/ezstress/ezstress-meme-2.png" 
   alt="meme 2" 
   className="rounded-lg max-w-full w-48 md:w-64 flex-shrink"
 />
 </div>
 <p className="text-center text-gray-500">EzStress solves all thses problems</p>
-
+<br/>
 ## What I Built
 
-EzStress uses LLM to estimate API traffic and automatically generate stress test scenarios based on realistic user patterns.
-Built on AWS Fargate, the project aims to support scalable testing and real-time monitoring, offering insightes for service optimization.
+EzStress는 LLM을 사용해 API 트래픽을 추정하고 현실적인 사용자 패턴을 기반으로 스트레스 테스트 시나리오를 자동 생성합니다.
+또한 AWS Fargate 기반으로 확장 가능한 테스트와 실시간 모니터링을 지원하며 서비스 최적화를 위한 인사이트를 제공합니다.
 <br/>
 
 **System Architecture**
 <img 
-  src="/projects/ezstress-architecture.png" 
+  src="/projects/ezstress/ezstress-architecture.png" 
   alt="system architecture" 
   className="mx-auto rounded-lg w-full my-4" 
 />
 **Test Execution Flow**
 
-I tried to implement an intuitive, seamless flow from service registration and authentication to test execution and result analysis.
+서비스 등록과 인증부터 테스트 실행, 결과 분석까지 직관적인 플로우를 구현하고자 했습니다.
 
 <img 
-  src="/projects/ezstress-test-1.png" 
+  src="/projects/ezstress/ezstress-test-1.png" 
   alt="test setup" 
   className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
 />
 <img 
-  src="/projects/ezstress-test-2.png" 
+  src="/projects/ezstress/ezstress-test-2.png" 
   alt="test loading" 
   className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
 />
 <br/>
 **Test Results Visualization Components**
 <img 
-  src="/projects/ezstress-test-result.png" 
+  src="/projects/ezstress/ezstress-test-result.png" 
   alt="test results visualization components" 
   className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
 />
 <br/>
 
-## Result
-
-EzStress offers two key advantages.
-- Cost-efficient: Enables stress testing at under $0.10 per 100 users, avoiding high license or infrastructure costs of traditional tools.
-- User-friendly: No scripting or setup required. Users simply specify test parameters, and the system runs automated tests that take only a few hours at most.
-
 ## What I Did
 
-- Participated in a 6-person team to design and develop the frontend using TypeScript and React.
-- Designed the information architecture, wireframes, and user interface with a strong focus on usability and user experience using Figma.
+- 6인 팀에서 TypeScript와 React를 사용해 프론트엔드를 설계·개발
+- 정보 구조 설계, 와이어프레임 및 UI를 Figma로 제작하고 사용성 중심으로 개선
+- 비용 조회, 한도 설정 등 기본 user api 연결
+- 서버에 요청 부하를 보내고 나온 결과를 GET api로 받아서 결과 차트/그래프로 시각화
+  - 타임아웃 비율
+  - 시간별·사용자수별 응답시간
+  - 상태 코드 비율
+  - 시간별 200·500 등 응답 상태
+  - 사용자가 가장 많이 들어갈 것으로 예상되는 top endpoint
+  - 발생하는 에러 메세지 nlp 분석
+- AWS S3를 사용해 배포
+<br/>
+## Result
 
+EzStress는 다음 두 가지 장점을 갖고 있습니다.
+- 비용 효율: 100명 기준으로도 테스트 비용이 0.10달러 이하로, 별도의 라이선스나 고가의 인프라 없이도 충분한 부하 테스트를 수행할 수 있습니다.
+- 사용성: 복잡한 설정이나 스크립트 작성 없이도, 사용자는 몇 가지 테스트 조건만 입력하면 됩니다. 시스템이 자동으로 테스트를 실행하고, 대부분 몇 시간 내에 결과를 확인할 수 있습니다.
+<br/>
 ## Tools Used (by me)
 <ToolTag tags={["React", "TypeScript", "AWS", "Figma"]}/>

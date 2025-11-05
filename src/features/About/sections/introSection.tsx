@@ -6,15 +6,15 @@ export default function IntroSection() {
         <div className="w-full md:w-1/3">
             <img
                 src="profile/profile.jpg"
-                alt="Jeongwon Kim"
+                alt="Hyeran Kim"
                 className="w-full rounded-lg shadow-lg"
             />
         </div>
         <div className="w-full md:w-2/3">
             <p className="text-gray-700 mb-8">
-                I'm a software engineering student with a passion for human-centered technology. I've been exploring ways to create digital experiences that feel comfortable and engaging for users.
+                안녕하세요. 웹 프론트엔드에 관심을 가지고 공부하고 있는 학생입니다.
                 <br /><br />
-                When I'm not coding or researching, I enjoy hitting the basketball court, playing drums in our school band, and working out at the gym.
+                쉴 때는 주로 e-sports를 봅니다.
             </p>
             <Contacts />
         </div>

@@ -1,0 +1,77 @@
+---
+title: "Simter"
+date: "May 2024 - Oct 2024"
+role: "Frontend Developer"
+thumbnail: "/projects/simter/simter-thumbnail-2.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+import ArrowLink from '@/components/ArrowLink/arrowLink';
+
+
+상담이나 심리치료가 필요함에도 전문적인 도움을 추구하지 않는 현대인들을 위해 고민을 부담없이 털어놓고 케어받을 수 있는 웹 서비스를 설계·개발했습니다.
+
+2024 경희대학교 "예술적인 소프트웨어" 프로젝트 결과물입니다. 프로젝트의 전체 소스 코드는 <ArrowLink href="https://github.com/git1uv" className="font-normal">GitHub</ArrowLink>에서 확인할 수 있습니다.
+
+현재 서버는 닫혀 있습니다. 유튜브에 시연 영상을 업로드하였습니다. <ArrowLink href="https://www.youtube.com/watch?v=UqBFQ0US8tQ" className="font-normal">심터 - 웹뷰</ArrowLink> <ArrowLink href="https://youtu.be/R7IfVAanZ8A" className="font-normal">심터 - 모바일뷰</ArrowLink>
+<br/>
+## Background
+<div className="flex flex-row mx-auto mt-8 justify-center flex-wrap gap-4">
+<img 
+  src="/projects/simter/simter-background.png" 
+  alt="Background" 
+  className="rounded-lg max-w-full w-64 md:w-96 flex-shrink" 
+/>
+<img 
+  src="/projects/simter/simter-research.png" 
+  alt="2" 
+  className="rounded-lg max-w-full w-64 md:w-96 flex-shrink"
+/>
+</div>
+코로나 이후로 심리적 어려움을 가지고 있는 사람들이 급증했지만 심리 상담·치료를 받는 이들은 많지 않습니다.
+
+이유는 기존 상담의 한계 때문입니다.
+- 오프라인으로 받는 것은 경제적·시간적 비용이 크고, 직접 가야 한다는 공간적 제약과 심리 상담을 받는 것에 대한 부정적 인식이 심리상담 서비스에 대한 접근성을 떨어트립니다.
+- 온라인으로 받는 것은 종종 형식적인 공감에 그치거나 인간적인 상호작용이 부족하곤 합니다.
+
+따라서 상담이나 심리치료가 필요함에도 전문적인 도움을 추구하지 않는 서비스갭을 줄이기 위한 서비스를 기획했습니다.
+<br/>
+**User Research**
+<img 
+  src="/projects/simter/simter-userresearch.png" 
+  alt="meme 1"
+  className="rounded-lg mx-auto my-4 w-160" 
+/>
+기획 단계에서 실제 사용자를 대상으로 설문을 진행했고 다음과 같은 인사이트를 얻었습니다
+
+<br/>
+## What I Built
+
+**System Architecture**
+<img 
+  src="/projects/simter/simter-architecture.png" 
+  alt="system architecture" 
+  className="mx-auto rounded-lg w-128 my-4" 
+/>
+<br/>
+**Key Features**
+- 챗봇을 누르면 테스트를 통해 나와 적합한 챗봇을 선택하고 대화 나눌 수 있습니다. 대화가 끝나면 자동으로 일지를 요약해 제공하고 다운받을 수 있습니다.
+- 쓰레기통을 누르면 버리고 싶은 감정을 적어 버릴 수 있습니다. 저장되지 않으며 버리는 애니메이션을 통해 감정 해소를 시각화합니다.
+- 달력에 오늘의 감정, 일기, 상담 내역, 할 일 등을 기록할 수 있습니다. 할 일은 챗봇과의 일지를 기반으로 감정을 해소하고 고민에서 잠시 벗어날 수 있는 활동을 권합니다.
+- 우연하게 챗봇이 편지를 보내면 종이비행기의 형태로 사용자의 심터에 안착합니다. 챗봇이 보낸 편지는 편지함에 저장됩니다.
+- 편지함과 연필꽂이 기능을 통해 익명으로 유저끼리 상호작용할 수 있습니다.
+
+<br/>
+## What I Did
+
+- 6인 팀에서 JavaScript와 React를 사용해 프론트엔드를 설계·개발
+- 편지함, 달력, 감정쓰레기통, 종이비행기, 설정 ui 개발 
+- 편지함, 달력, 종이비행기, 설정 api 연결
+- 반응형으로 구현
+- react-calendar 등 사용
+- 이미지가 많아 지연이 생겨서 webp로 바꾸고 동적 리사이징으로 리팩토링
+
+
+<br/>
+## Tools Used (by me)
+<ToolTag tags={["React", "JavaScript", "Styled Components", "Netlify", "Figma", "Redux"]}/>

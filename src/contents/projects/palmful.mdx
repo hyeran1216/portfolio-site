@@ -1,0 +1,126 @@
+---
+title: "Palmful"
+date: "Jun 2025 - Oct 2025"
+role: "Frontend Developer"
+thumbnail: "/projects/palmful/palmful-thumbnail-2.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+import ArrowLink from '@/components/ArrowLink/arrowLink';
+import Carousel from '@/components/Animations/carousel';
+export const custom_images = [
+  "/projects/palmful/palmful-custom-1.png",
+  "/projects/palmful/palmful-custom-2.png",
+  "/projects/palmful/palmful-custom-3.png",
+  "/projects/palmful/palmful-custom-4.png",
+  "/projects/palmful/palmful-custom-5.png",
+  "/projects/palmful/palmful-custom-6.png"
+];
+export const archive_images = [
+  "/projects/palmful/palmful-archive-1.png",
+  "/projects/palmful/palmful-archive-2.png",
+  "/projects/palmful/palmful-archive-3.png",
+  "/projects/palmful/palmful-archive-4.png",
+  "/projects/palmful/palmful-archive-5.png"
+];
+
+사용자가 선택한 옵션에 따라 어울리는 꽃 조합과 디자인을 AI가 자동으로 생성하고, 디자인된 꽃다발은 아카이브에 저장할 수 있으며, 친구와 꽃다발을 공유할 수 있는 웹 서비스를 설계·개발했습니다.
+
+2025 경희대학교 "예술적인 소프트웨어" 프로젝트 결과물입니다. 프로젝트의 전체 소스 코드는 <ArrowLink href="https://github.com/ganadiiiii" className="font-normal">GitHub</ArrowLink>에서 확인할 수 있습니다.
+
+현재 서버는 닫혀 있습니다. vercel로 일부 페이지를 볼 수 있습니다. <ArrowLink href="https://ganadii.vercel.app/" className="font-normal">한줌</ArrowLink>
+<br/>
+## Background
+
+<img 
+  src="/projects/palmful/palmful-background.png" 
+  alt="Background" 
+  className="mx-auto rounded-lg w-128 my-4" 
+/>
+글로벌 화훼 시장은 매년 꾸준히 성장하고 있고 온라인 꽃 선물 시장 역시 매년 7.3%씩 커지고 있습니다.
+<br/>
+하지만 현재의 꽃 선물 과정은 완성된 상품을 고르는 방식에 머물러 있어 소비자의 감정과 상황에 맞춘 개인화된 경험을 제공하지 못하고 있습니다.
+<p className="text-gray-500">
+  소비자들은 단순히 예쁜 꽃을 사는 것이 아닌, “그 사람만을 위한” 선물을 만들고 싶어한다<span className="text-xs">(Wang et al., 2023).</span>
+  소비자들은 꽃의 인간적인 터치, 감정적 스토리를 중요하게 평가한다<span className="text-xs">(Lei et al., 2024).</span>
+</p>
+또한 꽃은 일회성 선물로, 감정적 의미가 지속적인 만족이나 기억으로 이어지지 못한다는 문제도 있었습니다.
+<p className="text-gray-500">
+  꽃의 짧은 수명으로 인해 꽃은 ‘한순간의 감정 표현’에 그치며, 경제적·기능적 가치가 부족해 구매를 망설이게 하는 요인으로 작용한다<span className="text-xs">(Lei et al., 2024).</span>
+</p>
+
+<br/>
+**User Research**
+<img 
+  src="/projects/palmful/palmful-userresearch.png" 
+  alt="meme 1"
+  className="rounded-lg mx-auto my-4 w-128" 
+/>
+기획 단계에서 실제 사용자를 대상으로 설문을 진행했고 다음과 같은 인사이트를 얻었습니다
+- 소비자는 꽃다발에 감정을 담고 싶지만 플로리스트를 통한 과정은 비싸고 복잡하며 결과물을 예측하기 어려움
+- 꽃은 일회성 선물로 소비되어 감정적 의미가 지속적인 경험으로 이어지지 못함
+<br/>
+따라서 이 문제를 해결하기 위해 두가지의 핵심 기능을 잡고 개발을 시작했습니다.
+- 사용자가 입력한 감정과 상황 기반으로 AI가 어울리는 꽃다발 디자인을 생성해 시각적으로 보여주는 **나만의 플로리스트**
+- 소중한 사람과 주고 받은 꽃다발을 그 순간의 감정과 함께 기록함으로써, 시간이 지나도 다시 꺼내볼 수 있는 **나만의 꽃집**
+
+<br/>
+## What I Built
+
+**System Architecture**
+<img 
+  src="/projects/palmful/palmful-architecture.png" 
+  alt="system architecture" 
+  className="mx-auto rounded-lg w-128 my-4" 
+/>
+<br/>
+**IA & Userflow**
+<div className="flex flex-row mx-auto mt-8 justify-center flex-wrap gap-4">
+<img 
+  src="/projects/palmful/palmful-ia.png" 
+  alt="1"
+  className="rounded-lg max-w-full w-64 md:w-80 flex-shrink" 
+/>
+<img 
+  src="/projects/palmful/palmful-userflow.png" 
+  alt="2" 
+  className="rounded-lg max-w-full w-64 md:w-80 flex-shrink"
+/>
+</div>
+시작 전 IA를 기획하고 구체적인 유저플로우를 작성하는 과정을 거쳤습니다.
+<br/>
+**Key Features**
+<Carousel imageList={custom_images}/>
+대상과 자신의 감정, 상황, 취향 등을 입력하고 입력한 데이터 기반으로 나노바나나 모델이 꽃 조합을 생성합니다.
+
+사용자는 결과를 바로 확인하고, 꽃다발을 실물로 바로 구매하거나, 친구목록에서 친구를 선택하고 메세지를 작성하여 친구에게 꽃다발을 보내는 등의 작업을 할 수 있습니다.
+<br/>
+<Carousel imageList={archive_images}/>
+커스텀으로 생성하거나 친구와 주고받은 꽃다발은 모두 아카이빙 페이지에서 확인할 수 있습니다. 
+- 배경화면은 클릭하는 대로 바뀝니다.
+- 우체통을 누르면 친구모달이 뜹니다. 새로운 사용자를 검색해 친구를 추가하거나 삭제할 수 있고 친구의 아카이빙 페이지를 방문해 친구의 꽃 목록을 확인해볼 수 있습니다.
+- 캐릭터를 클릭할 경우 연애 시뮬레이션 컨셉으로 꽃 관리법을 알려주며 꽃다발을 받은 경험이 오래 지속될 수 있도록 도왔습니다.
+- 카드를 누르면 커스텀 결과 페이지와 유사한 상세 페이지를 볼 수 있습니다
+
+<br/>
+
+## What I Did
+
+- 6인 팀에서 TypeScript와 React를 사용해 프론트엔드를 설계·개발
+- 커스텀, 친구, 로그인/회원가입, 주문 배송/픽업, Shop ui 개발 
+- 커스텀, 친구, 기본 user api 연결
+- framer-motion을 사용해 자연스러운 상호작용을 제공
+- 반응형으로 구현
+- react-daum-postcode, react-calendar, react-google-maps 등 사용
+- AWS S3를 사용해 배포
+
+<br/>
+## Result
+
+한줌은 다음 두 가지 장점을 갖고 있습니다.
+- 비용 효율: 플로리스트를 거치지 않고 디자인을 만들고 주문할 수 있다는 점에서 비용 효율적입니다.
+- 지속성: 받는 일회성 순간에 그치지 않고 지속적으로 기억을 반추할 수 있습니다.
+
+<br/>
+## Tools Used (by me)
+<ToolTag tags={["React", "TypeScript", "Tailwind CSS", "AWS", "Figma"]}/>

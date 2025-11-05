@@ -20,7 +20,7 @@ export default function Projects() {
 
     return (
         <>
-            <title>Projects - Jeongwon Kim</title>
+            <title>Projects - Hyeran Kim</title>
             <div className="mt-12 mb-24">
                 <SlideUp delay={100}>
                     <CategoryTab

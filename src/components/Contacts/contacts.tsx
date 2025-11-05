@@ -1,4 +1,4 @@
-import { EMAIL, GITHUB, RESUME } from "@/constants/contacts"
+import { EMAIL, GITHUB } from "@/constants/contacts"
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
@@ -10,9 +10,9 @@ export default function Contacts() {
             case "email":
                 window.open(`mailto:${EMAIL}`, "_blank");
                 break;
-            case "resume":
-                window.open(RESUME, "_blank");
-                break;
+            // case "resume":
+            //     window.open(RESUME, "_blank");
+            //     break;
             case "github":
                 window.open(GITHUB, "_blank");
                 break;
@@ -29,7 +29,7 @@ export default function Contacts() {
 
     return (
         <div className="flex gap-3 items-center">
-            <div 
+            {/* <div 
                 className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-1.5 py-1 rounded-md transition-all duration-200 delay-150" 
                 onClick={onClick} 
                 id="resume"
@@ -47,7 +47,7 @@ export default function Contacts() {
                 >
                     Resume
                 </span>
-            </div>
+            </div> */}
 
             <div 
                 className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-1.5 py-1 rounded-md transition-all duration-200 delay-150" 

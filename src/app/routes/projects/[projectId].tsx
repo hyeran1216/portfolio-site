@@ -23,7 +23,7 @@ export default function ProjectDetails() {
     // set page title when project data is available
     useEffect(() => {
         if (project) {
-            setPageTitle(`${project.title} - Jeongwon Kim`);
+            setPageTitle(`${project.title} - Hyeran Kim`);
         }
     }, [project]);
 

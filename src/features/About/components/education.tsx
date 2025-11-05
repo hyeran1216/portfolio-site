@@ -6,9 +6,9 @@ export default function Education() {
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
                         <p><span className="font-semibold">Kyung Hee University</span> / Seoul, Republic of Korea</p>
-                        <p className="text-gray-500">Expected Graduation Date: Feb 2026</p>
+                        <p className="text-gray-500">Expected Graduation Date: Feb 2027</p>
                     </div>
-                    <p className="text-gray-500">B.S. in Computer Science, College of Software (Cumulative GPA: 4.23/4.5)</p>
+                    <p className="text-gray-500">B.S. in Software Convergence (Data Science Track), College of Software (Cumulative GPA: 4.18/4.5)</p>
                 </li>
             </ul>
         </div>
