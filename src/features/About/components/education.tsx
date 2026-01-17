@@ -8,7 +8,7 @@ export default function Education() {
                         <p><span className="font-semibold">Kyung Hee University</span> / Seoul, Republic of Korea</p>
                         <p className="text-gray-500">Expected Graduation Date: Feb 2027</p>
                     </div>
-                    <p className="text-gray-500">B.S. in Software Convergence (Data Science Track), College of Software (Cumulative GPA: 4.18/4.5)</p>
+                    <p className="text-gray-500">B.S. in Software Convergence (Data Science Track), College of Software (Cumulative GPA: 4.2/4.5)</p>
                 </li>
             </ul>
         </div>

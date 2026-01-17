@@ -5,7 +5,7 @@ export default function IntroSection() {
         <div className="flex flex-col md:flex-row items-start gap-8 mt-12 mb-16">
         <div className="w-full md:w-1/3">
             <img
-                src="profile/profile.jpg"
+                src="profile.png"
                 alt="Hyeran Kim"
                 className="w-full rounded-lg shadow-lg"
             />

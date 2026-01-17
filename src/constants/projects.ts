@@ -16,6 +16,15 @@ export type ProjectType = {
 
 export const PROJECTS: ProjectType[] = [
     {
+        slug: 'smartmark',
+        title: 'SmartMark',
+        date: 'Fall 2025',
+        summary: '개인화된 AI 기반 북마크 확장 프로그램',
+        thumbnail: 'projects/capstone/smartmark-thumbnail.png',
+        tags: ["JavaScript", "CSS", "Chrome Extension"],
+        category: 'Personal Project'
+    },
+    {
         slug: 'palmful',
         title: 'Palmful',
         date: 'Fall 2025',
