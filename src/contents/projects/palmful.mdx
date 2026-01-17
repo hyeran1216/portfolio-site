@@ -10,21 +10,6 @@ import ArrowLink from '@/components/ArrowLink/arrowLink';
 import Carousel from '@/components/Animations/carousel';
 import ReactPlayer from "react-player";
 
-export const custom_images = [
-  "projects/palmful/palmful-custom-1.png",
-  "projects/palmful/palmful-custom-2.png",
-  "projects/palmful/palmful-custom-3.png",
-  "projects/palmful/palmful-custom-4.png",
-  "projects/palmful/palmful-custom-5.png",
-  "projects/palmful/palmful-custom-6.png"
-];
-export const archive_images = [
-  "projects/palmful/palmful-archive-1.png",
-  "projects/palmful/palmful-archive-2.png",
-  "projects/palmful/palmful-archive-3.png",
-  "projects/palmful/palmful-archive-4.png",
-  "projects/palmful/palmful-archive-5.png"
-];
 
 사용자가 선택한 옵션에 따라 어울리는 꽃 조합과 디자인을 AI가 자동으로 생성하고, 디자인된 꽃다발은 아카이브에 저장할 수 있으며, 친구와 꽃다발을 공유할 수 있는 웹 서비스를 설계·개발했습니다.
 
@@ -95,14 +80,14 @@ export const archive_images = [
 <div className="flex flex-col md:flex-row mx-auto gap-6">
   <div className="flex w-full md:w-3/5 justify-start mt-2">
     <ReactPlayer 
-      src="palmful/palmful-custom.mov"
-        className="rounded-lg border border-gray-300"
-        width="100%"
-        height="288px"
-        muted={true}
-        loop={true}
-        playing={true}
-        playsinline={true}
+      src="projects/palmful/palmful-custom.mp4"
+      className="rounded-lg border border-gray-300"
+      width="100%"
+      height="100%"
+      muted={true}
+      loop={true}
+      playing={true}
+      playsinline={true}
     />
   </div>
 
@@ -118,14 +103,14 @@ export const archive_images = [
 <div className="flex flex-col md:flex-row mx-auto gap-6">
   <div className="flex w-full md:w-3/5 justify-start mt-2">
     <ReactPlayer 
-      src="palmful/palmful-archive.mov"
-        className="rounded-lg border border-gray-300"
-        width="100%"
-        height="288px"
-        muted={true}
-        loop={true}
-        playing={true}
-        playsinline={true}
+      src="projects/palmful/palmful-archive.mp4"
+      className="rounded-lg border border-gray-300"
+      width="100%"
+      height="100%"
+      muted={true}
+      loop={true}
+      playing={true}
+      playsinline={true}
     />
   </div>
 
@@ -134,8 +119,8 @@ export const archive_images = [
       <p className="break-all">커스텀으로 생성하거나 친구와 주고받은 꽃다발은 모두 아카이빙 페이지에서 확인할 수 있습니다.</p>
       <ul>
         <li><p className="break-all">우체통을 누르면 친구모달이 뜹니다. 새로운 사용자를 검색해 친구를 추가하거나 삭제할 수 있고 친구의 아카이빙 페이지를 방문할 수 있습니다.</p></li>
-        <li><p className="break-all">캐릭터를 클릭할 경우 연애 시뮬레이션 컨셉으로 꽃 관리법을 알려줍니다.</p></li>
-        <li><p className="break-all">카드를 누르면 커스텀 결과 페이지와 유사한 상세 페이지를 볼 수 있습니다.</p></li>
+        <li><p className="break-all">캐릭터를 클릭할 경우 꽃 관리법을 알려줍니다.</p></li>
+        <li><p className="break-all">카드를 누르면 커스텀 상세 페이지를 볼 수 있습니다.</p></li>
       </ul>
     </div>
 </div>
