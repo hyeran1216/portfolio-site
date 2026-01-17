@@ -14,43 +14,61 @@ SmartMark는 기존 브라우저 북마크의 한계를 개선하기 위해 설�
 <br/>
 ## Background
 
-기존 북마크 시스템은 다음과 같은 구조적 문제를 가지고 있습니다.
-- 기억 문제
+<p>기존 북마크 시스템은 다음과 같은 구조적 문제를 가지고 있습니다.</p>
 
-    제목과 URL 중심의 목록형 UI로는 **이 북마크가 어떤 내용이었는지** 한눈에 파악하기 어렵습니다.
+<ol class="list-decimal pl-5 space-y-3">
+  <li>
+    <strong>기억 문제</strong>
+    <p class="ml-4">
+      제목과 URL 중심의 목록형 UI로는 
+      <strong>이 북마크가 어떤 내용이었는지</strong> 한눈에 파악하기 어렵습니다.
+    </p>
+  </li>
 
-- 방치 문제 (링크 무덤)
+  <li>
+    <strong>방치 문제 (링크 무덤)</strong>
+    <p class="ml-4">
+      저장 이후 관리 기능이 부족해 오래된 북마크는 잊히거나,
+      링크가 죽어도 알 수 없습니다.
+    </p>
+  </li>
 
-    저장 이후 관리 기능이 부족해 오래된 북마크는 잊히거나, 링크가 죽어도 알 수 없습니다.
+  <li>
+    <strong>검색 비효율성</strong>
+    <p class="ml-4">
+      북마크를 저장해두고도 원하는 정보를 찾지 못해
+      다시 검색하는 비효율이 반복됩니다.
+    </p>
+  </li>
+</ol>
 
-- 검색 비효율성
-
-    북마크를 저장해두고도 원하는 정보를 찾지 못해 다시 검색하는 비효율이 반복됩니다.
-
-SmartMark는 이 세 가지 문제를 각각 기능적으로 분리해 해결합니다.
+<p class="mt-4">
+  SmartMark는 이 세 가지 문제를 각각 기능적으로 분리해 해결합니다.
+</p>
 
 <br/>
 ## Key Features
 <div className="flex flex-col md:flex-row mx-auto gap-6">
-    <div className="w-full md:w-3/5">
+    <div className="flex w-full md:w-3/5 justify-start mt-2">
         <img 
-            src="projects/capstone/sm-1.png" 
-            className="rounded-lg border border-gray-300"
-            width="100%"
-            height="288px"
+        src="projects/capstone/sm-1.png"
+        className="rounded-lg border border-gray-300"
+        width="100%"
+        height="288px"
         />
     </div>
+
     <div className="flex flex-col w-full md:w-2/5 justify-start mt-2">
         <div className="mb-4"><strong>1. 카드 UI 북마크 페이지</strong></div>
-        <div className="mb-3">기존 크롬 북마크와 연동</div>
-        <div>썸네일, 제목, 요약, 태그를 카드 형태로 표시</div>
+        <p className="break-all">기존 크롬 북마크와 연동</p>
+        <p className="break-all">썸네일, 제목, 요약, 태그를 카드 형태로 표시</p>
     </div>
 </div>
 
 <div className="mx-auto h-12"/>
 
 <div className="flex flex-col md:flex-row mx-auto gap-6">
-    <div className="w-full md:w-2/5">
+    <div className="flex w-full md:w-2/5 justify-start mt-2">
         <img 
             src="projects/capstone/sm-2.png" 
             className="rounded-lg border border-gray-300"
@@ -60,15 +78,15 @@ SmartMark는 이 세 가지 문제를 각각 기능적으로 분리해 해결합
     </div>
     <div className="flex flex-col w-full md:w-3/5 justify-start mt-2">
         <div className="mb-4"><strong>2. AI 기반 자동 요약</strong></div>
-        <div className="mb-3">웹페이지 저장 시 한 줄 요약 자동 생성</div>
-        <div>YouTube 링크는 자막 기반 요약 지원</div>
+        <p className="break-all">웹페이지 저장 시 한 줄 요약 자동 생성</p>
+        <p className="break-all">YouTube 링크는 자막 기반 요약 지원</p>
     </div>
 </div>
 
 <div className="mx-auto h-12"/>
 
 <div className="flex flex-col md:flex-row mx-auto gap-6">
-    <div className="w-full md:w-2/5">
+    <div className="flex w-full md:w-2/5 justify-start mt-2">
         <img 
             src="projects/capstone/sm-3.png" 
             className="rounded-lg border border-gray-300"
@@ -78,8 +96,8 @@ SmartMark는 이 세 가지 문제를 각각 기능적으로 분리해 해결합
     </div>
     <div className="flex flex-col w-full md:w-3/5 justify-start mt-2">
         <div className="mb-4"><strong>3. 의미 기반 하이브리드 검색</strong></div>
-        <div className="mb-3">TF-IDF + USE + BERT 임베딩을 결합한 앙상블 검색</div>
-        <div>의미 유사도 기반 검색</div>
+        <p className="break-all">TF-IDF + USE + BERT 임베딩을 결합한 앙상블 검색</p>
+        <p className="break-all">의미 유사도 기반 검색</p>
     </div>
 </div>
 
@@ -92,14 +110,14 @@ SmartMark는 이 세 가지 문제를 각각 기능적으로 분리해 해결합
     height="288px"
 />
 <div className="mb-4"><strong>4. 중복·유사 북마크 감지</strong></div>
-<div className="mb-3">검색할 때 이미 유사한 북마크가 존재하면 안내</div>
-<div>불필요한 중복 저장 및 반복 검색 방지</div>
+<p className="break-all">검색할 때 이미 유사한 북마크가 존재하면 안내</p>
+<p className="break-all">불필요한 중복 저장 및 반복 검색 방지</p>
 
 <div className="mx-auto h-12"/>
 
 <div className="mb-4"><strong>5. 링크 수명 관리 및 리마인드</strong></div>
-<div className="mb-3">같은 방식으로 마지막 방문 이후 90일 이상 경과한 북마크 감지</div>
-<div>죽었을 가능성이 있는 링크를 알림으로 안내</div>
+<p className="break-all">같은 방식으로 마지막 방문 이후 90일 이상 경과한 북마크 감지</p>
+<p className="break-all">죽었을 가능성이 있는 링크를 알림으로 안내</p>
 
 <br/>
 
